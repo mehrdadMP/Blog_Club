@@ -63,6 +63,7 @@ BlogClub is a modern news application built with Flutter, providing users with p
 
 ### Project Structure  
 ```
+assets/ # Assets & fonts
 lib/
 ├── core/ # Core utilities & constants
 │ ├── constants/ # App constants & strings
@@ -77,7 +78,6 @@ lib/
 │ ├── profile/ # User profile section
 │ └── splash/ # Splash screen components
 │
-├── assets/ # Assets & fonts
 ├── gen/ # Generated assets & fonts files
 └── main.dart # App entry point
 ```
