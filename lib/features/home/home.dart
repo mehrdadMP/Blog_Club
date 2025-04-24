@@ -1,7 +1,7 @@
 
-import 'package:blogclub/carousel/carousel_options.dart';
-import 'package:blogclub/carousel/carousel_slider.dart';
-import 'package:blogclub/data.dart';
+import 'package:blogclub/core/widgets/carousel/carousel_options.dart';
+import 'package:blogclub/core/widgets/carousel/carousel_slider.dart';
+import 'package:blogclub/core/utils/data.dart';
 import 'package:blogclub/gen/assets.gen.dart';
 import 'package:blogclub/gen/fonts.gen.dart';
 import 'package:blogclub/main.dart';

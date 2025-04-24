@@ -1,7 +1,7 @@
-import 'package:blogclub/article.dart';
+import 'package:blogclub/features/article/article.dart';
 import 'package:blogclub/gen/fonts.gen.dart';
-import 'package:blogclub/home.dart';
-import 'package:blogclub/profile.dart';
+import 'package:blogclub/features/home/home.dart';
+import 'package:blogclub/features/profile/profile.dart';
 import 'package:flutter/material.dart';
 
 void main() {

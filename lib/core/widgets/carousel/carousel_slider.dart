@@ -2,7 +2,7 @@ library carousel_slider;
 
 import 'dart:async';
 
-import 'package:blogclub/carousel/carousel_state.dart';
+import 'package:blogclub/core/widgets/carousel/carousel_state.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart' hide CarouselController;
 

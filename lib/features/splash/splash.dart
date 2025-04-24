@@ -1,5 +1,5 @@
 import 'package:blogclub/gen/assets.gen.dart';
-import 'package:blogclub/onboarding.dart';
+import 'package:blogclub/features/onBoarding/onboarding.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

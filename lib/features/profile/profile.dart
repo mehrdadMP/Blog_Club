@@ -1,6 +1,6 @@
-import 'package:blogclub/data.dart';
+import 'package:blogclub/core/utils/data.dart';
 import 'package:blogclub/gen/assets.gen.dart';
-import 'package:blogclub/home.dart';
+import 'package:blogclub/features/home/home.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
