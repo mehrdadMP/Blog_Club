@@ -1,17 +1,8 @@
-import 'dart:ui';
-
 import 'package:blogclub/article.dart';
-import 'package:blogclub/carousel/carousel_slider.dart';
-import 'package:blogclub/data.dart';
-import 'package:blogclub/gen/assets.gen.dart';
 import 'package:blogclub/gen/fonts.gen.dart';
 import 'package:blogclub/home.dart';
 import 'package:blogclub/profile.dart';
-import 'package:blogclub/splash.dart';
-import 'package:dotted_border/dotted_border.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 void main() {
   // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -32,7 +23,7 @@ class MyApp extends StatelessWidget {
     const secondaryTextColor = Color(0xff2D4379);
     const primaryColor = Color(0xff376AED);
 
-    return MaterialApp(
+    return MaterialApp(debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         textButtonTheme: TextButtonThemeData(
@@ -58,41 +49,41 @@ class MyApp extends StatelessWidget {
           backgroundColor: primaryColor,
         ),
         textTheme: const TextTheme(
-            subtitle1: TextStyle(
+            titleMedium: TextStyle(
                 fontFamily: FontFamily.avenir,
                 color: secondaryTextColor,
                 fontWeight: FontWeight.w200,
                 fontSize: 18),
-            headline6: TextStyle(
+            titleLarge: TextStyle(
                 fontFamily: FontFamily.avenir,
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
                 color: primaryTextColor),
-            headline4: TextStyle(
+            headlineMedium: TextStyle(
                 fontFamily: FontFamily.avenir,
                 fontWeight: FontWeight.w700,
                 fontSize: 24,
                 color: primaryTextColor),
-            headline5: TextStyle(
+            headlineSmall: TextStyle(
                 fontFamily: FontFamily.avenir,
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
                 color: primaryTextColor),
-            caption: TextStyle(
+            bodySmall: TextStyle(
                 fontFamily: FontFamily.avenir,
                 fontWeight: FontWeight.w700,
                 color: Color(0xff7B8BB2),
                 fontSize: 10),
-            subtitle2: TextStyle(
+            titleSmall: TextStyle(
                 fontFamily: FontFamily.avenir,
                 color: primaryTextColor,
                 fontWeight: FontWeight.w400,
                 fontSize: 14),
-            bodyText1: TextStyle(
+            bodyLarge: TextStyle(
                 fontFamily: FontFamily.avenir,
                 color: primaryTextColor,
                 fontSize: 14),
-            bodyText2: TextStyle(
+            bodyMedium: TextStyle(
                 fontFamily: FontFamily.avenir,
                 color: secondaryTextColor,
                 fontSize: 12)),
@@ -168,7 +159,12 @@ class _MainScreenState extends State<MainScreen> {
                 children: [
                   _navigator(_homeKey, homeIndex, const HomeScreen()),
                   _navigator(_articleKey, articleIndex, const ArticleScreen()),
-                  _navigator(_searchKey, searchIndex, const SimpleScreen(tabName: 'Search',)),
+                  _navigator(
+                      _searchKey,
+                      searchIndex,
+                      const SimpleScreen(
+                        tabName: 'Search',
+                      )),
                   _navigator(_menuKey, menuIndex, const ProfileScreen()),
                 ],
               ),
@@ -219,14 +215,14 @@ class SimpleScreen extends StatelessWidget {
         children: [
           Text(
             'Tab: $tabName, Screen #$screenNumber',
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.headlineMedium,
           ),
           ElevatedButton(
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) => SimpleScreen(
                           tabName: tabName,
-                          screenNumber: screenNumber+1,
+                          screenNumber: screenNumber + 1,
                         )));
               },
               child: Text('Click Me')),
@@ -359,10 +355,10 @@ class BottomNavigationItem extends StatelessWidget {
             ),
             Text(
               title,
-              style: themeData.textTheme.caption!.apply(
+              style: themeData.textTheme.bodySmall!.apply(
                   color: isActive
                       ? themeData.colorScheme.primary
-                      : themeData.textTheme.caption!.color),
+                      : themeData.textTheme.bodySmall!.color),
             )
           ],
         ),

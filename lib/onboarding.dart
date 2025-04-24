@@ -1,7 +1,6 @@
 import 'package:blogclub/auth.dart';
 import 'package:blogclub/data.dart';
 import 'package:blogclub/gen/assets.gen.dart';
-import 'package:blogclub/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -72,14 +71,14 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             children: [
                               Text(
                                 items[index].title,
-                                style: themeData.textTheme.headline4,
+                                style: themeData.textTheme.headlineMedium,
                               ),
                               const SizedBox(
                                 height: 16,
                               ),
                               Text(
                                 items[index].description,
-                                style: themeData.textTheme.subtitle1!
+                                style: themeData.textTheme.titleMedium!
                                     .apply(fontSizeFactor: 0.9),
                               ),
                             ],

@@ -1,6 +1,4 @@
 import 'package:blogclub/gen/assets.gen.dart';
-import 'package:blogclub/gen/fonts.gen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AuthScreen extends StatefulWidget {
@@ -119,14 +117,14 @@ class _Login extends StatelessWidget {
       children: [
         Text(
           'Welcome back',
-          style: themeData.textTheme.headline4,
+          style: themeData.textTheme.headlineMedium,
         ),
         const SizedBox(
           height: 8,
         ),
         Text(
           'Sign in with your account',
-          style: themeData.textTheme.subtitle1!.apply(fontSizeFactor: 0.8),
+          style: themeData.textTheme.titleMedium!.apply(fontSizeFactor: 0.8),
         ),
         const SizedBox(
           height: 16,
@@ -209,14 +207,14 @@ class _SignUp extends StatelessWidget {
       children: [
         Text(
           'Welcome to blog club',
-          style: themeData.textTheme.headline4,
+          style: themeData.textTheme.headlineMedium,
         ),
         const SizedBox(
           height: 8,
         ),
         Text(
           'please enter your information',
-          style: themeData.textTheme.subtitle1!.apply(fontSizeFactor: 0.8),
+          style: themeData.textTheme.titleMedium!.apply(fontSizeFactor: 0.8),
         ),
         const SizedBox(
           height: 16,

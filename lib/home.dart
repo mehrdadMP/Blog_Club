@@ -1,4 +1,5 @@
-import 'package:blogclub/article.dart';
+
+import 'package:blogclub/carousel/carousel_options.dart';
 import 'package:blogclub/carousel/carousel_slider.dart';
 import 'package:blogclub/data.dart';
 import 'package:blogclub/gen/assets.gen.dart';
@@ -7,7 +8,6 @@ import 'package:blogclub/main.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Text(
                       'Hi, Jonathan!',
-                      style: themeData.textTheme.subtitle1,
+                      style: themeData.textTheme.titleMedium,
                     ),
                     Assets.img.icons.notification.image(width: 32, height: 32),
                   ],
@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(32, 0, 0, 16),
                 child: Text(
                   'Explore today’s',
-                  style: themeData.textTheme.headline4,
+                  style: themeData.textTheme.headlineMedium,
                 ),
               ),
               _StoryList(stories: stories),
@@ -150,7 +150,7 @@ class _CategoryItem extends StatelessWidget {
               category.title,
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .titleLarge!
                   .apply(color: Colors.white),
             ),
           )
@@ -293,7 +293,7 @@ class _PostList extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Latest News', style: Theme.of(context).textTheme.headline5),
+              Text('Latest News', style: Theme.of(context).textTheme.headlineSmall),
               TextButton(
                 onPressed: () {},
                 child: const Text(
@@ -373,7 +373,7 @@ class Post extends StatelessWidget {
                       height: 8,
                     ),
                     Text(post.title,
-                        style: Theme.of(context).textTheme.subtitle2),
+                        style: Theme.of(context).textTheme.titleSmall),
                     const SizedBox(
                       height: 16,
                     ),
@@ -383,24 +383,24 @@ class Post extends StatelessWidget {
                         Icon(CupertinoIcons.hand_thumbsup,
                             size: 16,
                             color:
-                                Theme.of(context).textTheme.bodyText2!.color),
+                                Theme.of(context).textTheme.bodyMedium!.color),
                         const SizedBox(
                           width: 4,
                         ),
                         Text(post.likes,
-                            style: Theme.of(context).textTheme.bodyText2),
+                            style: Theme.of(context).textTheme.bodyMedium),
                         const SizedBox(
                           width: 16,
                         ),
                         Icon(CupertinoIcons.clock,
                             size: 16,
                             color:
-                                Theme.of(context).textTheme.bodyText2!.color),
+                                Theme.of(context).textTheme.bodyMedium!.color),
                         const SizedBox(
                           width: 4,
                         ),
                         Text(post.time,
-                            style: Theme.of(context).textTheme.bodyText2),
+                            style: Theme.of(context).textTheme.bodyMedium),
                         Expanded(
                           child: Container(
                             alignment: Alignment.centerRight,
@@ -411,7 +411,7 @@ class Post extends StatelessWidget {
                                 size: 16,
                                 color: Theme.of(context)
                                     .textTheme
-                                    .bodyText2!
+                                    .bodyMedium!
                                     .color),
                           ),
                         )
