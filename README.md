@@ -71,11 +71,14 @@ lib/
 │
 ├── features/ # Feature modules
 │ ├── article/ # Article display logic
+│ ├── auth/ # authentication
 │ ├── home/ # Home screen components
+│ ├── onBoarding/ # onBoarding
 │ ├── profile/ # User profile section
-│ └── shared/ # Shared feature components
+│ └── splash/ # Splash screen components
 │
-├── app.dart # Main app configuration
+├── assets/ # Assets & fonts
+├── gen/ # Generated assets & fonts files
 └── main.dart # App entry point
 ```
 ---  
