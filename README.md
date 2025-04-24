@@ -9,21 +9,23 @@ BlogClub is a modern news application built with Flutter, providing users with p
   - Trending stories carousel
   - News categories filter
   - Latest news articles list
-    ![1](https://github.com/user-attachments/assets/866b09b5-87ef-4397-8365-6367980b5d7a)
-
 
 - **Article Screen**: 
   - Full article view with rich formatting
   - Related articles suggestions
   - Bookmark/save functionality
-    ![2](https://github.com/user-attachments/assets/94ab88f3-396a-4f8b-bcf0-39d4aa9afcde)
+    
 
 
 - **Profile Screen**:  
   - User information management
   - "My Posts" section for saved/created content
   - Reading history
-    ![3](https://github.com/user-attachments/assets/6c70209d-43ac-4fa2-831d-ebaf46266bea)
+    
+
+    ## Screenshots
+
+     ![1](https://github.com/user-attachments/assets/866b09b5-87ef-4397-8365-6367980b5d7a)![2](https://github.com/user-attachments/assets/94ab88f3-396a-4f8b-bcf0-39d4aa9afcde)![3](https://github.com/user-attachments/assets/6c70209d-43ac-4fa2-831d-ebaf46266bea)
 
 
 ## Installation
