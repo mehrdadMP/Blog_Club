@@ -79,7 +79,6 @@ lib/
 │
 ├── gen/ # Generated assets & fonts files
 └── main.dart # App entry point
-│
 assets/ # Assets & fonts
 ```
 ---  
