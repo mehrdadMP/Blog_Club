@@ -2,7 +2,8 @@
 
 BlogClub is a modern news application built with Flutter, providing users with personalized news feeds, categories, and story features.
 
-![Group 1](https://github.com/user-attachments/assets/28895245-e14a-484d-8a7e-de7e1c8acea2)
+<img width="4060" height="3148" alt="BLOG CLUB" src="https://github.com/user-attachments/assets/9906e11f-d10e-41b1-a5a3-462dabc8bef9" />
+
 
 
 ## Features
